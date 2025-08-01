@@ -1,103 +1,42 @@
 import Image from "next/image";
+import Link from "next/link";
+import { IconVolume } from '@tabler/icons-react';
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  return (
+    <div className="font-sans flex flex-col items-start">
+      <section className="bg-linear-to-b from-indigo-900/16 to-transparent border-t border-t-indigo-800/36 px-8 sm:px-12 py-[12dvh] sm:py-32 min-[860px]:py-36 lg:py-50 w-full ease-out duration-320">
+        <div className="text-[5.4dvw] whitespace-nowrap sm:text-4xl/12 min-[860px]:text-5xl/15 lg:text-6xl/20 font-bold my-3">
+          Amaze peoples,<br />
+          by doing something <span
+            className="bg-(image:--text-grad) bg-clip-text text-transparent relative z-3 before:blur-sm before:content-['interesting'] before:absolute before:-z-1 before:bg-clip-text before:text-transparent before:bg-(image:--text-grad) before:brightness-125 before:opacity-64"
+            style={{
+              '--text-grad': `linear-gradient(128deg, rgba(36, 189, 255, 1) 0%,
+                rgba(128, 31, 255, 1) 100%)`
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            interesting
+          </span>.
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <div className="text-lg text-slate-400 my-2 mb-6">
+          Making something what I really love.
+        </div>
+
+        <Link className="relative text-xl bg-linear-128 from-sky-500 to-indigo-500 px-3.5 py-2 rounded-xl before:text-xl before:bg-linear-128 before:from-sky-500 before:to-indigo-500 before:px-3.5 before:py-2 before:rounded-xl before:content-['Learn_more'] before:blur-sm hover:before:blur-md before:opacity-80 hover:before:opacity-100 before:absolute before:inset-0 before:-z-1 before:duration-640 before:ease-out" href="/about">
+          Learn more
+        </Link>
+      </section>
+
+      <section className="bg-linear-to-b from-indigo-900/16 to-transparent border-t border-t-indigo-800/36 w-full p-12">
+        <h1></h1>
+        <p className="text-lg">
+          Laselxt (pronounced <code className="px-1.5 py-1 rounded-md bg-slate-800 border border-indigo-900/50">/ˈleɪz.ləkst/</code>) is a non-profit organization that aims to create amazing artworks, and shares to everyone.<br />
+          We wanted to grow and express our creativity, improve skills, and to be known by everyone else. So, we just made Laselxt.<br />
+          This is the very beginning of Laselxt. But, we're already working on a new project! Please look forward to see it.
+        </p>
+      </section>
     </div>
   );
 }

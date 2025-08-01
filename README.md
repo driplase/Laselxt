@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+_(The informations in this website is all fiction.)_
 
-## Getting Started
+# Laselxt website
+This is a website for Laselxt.
 
-First, run the development server:
+<detials>
+  <summary>## Questions</summary>
+  ### Why did you make this?
+  The answer is simple.\
+  Two of my friends were using AI to make a modern website, and actually used it in one of their projects.\
+  So I casually wanted to oppose them with no reason.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  ### why give it the weird name "Laselxt"?
+  I tried to make a website with Next.js again. and I needed a brand name (obviously not real though) for this website.\
+  So I combined `lase` (a part of my handle name) and `next` (because **next**.js). but you surely know why i didn't use it as it is.\
+  I put a `l` in the combination (i tried `r` too, but `l` felt right). That's all.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  ### So will you make Laselxt real in the future?
+  I think I'm not going to make it real.\
+  But maybe, if I changed my mind in the future, or someone wanted to make it real, it might happen.
+</details>
