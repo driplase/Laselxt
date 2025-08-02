@@ -8,6 +8,10 @@ export default function About() {
         <div className="text-[5.4dvw] whitespace-nowrap sm:text-4xl/12 min-[860px]:text-5xl/15 lg:text-6xl/20 font-bold my-3">
           About Laselxt
         </div>
+        
+        <div className="text-lg text-slate-400 my-2 mb-6">
+          Explaining something about Laselxt.
+        </div>
 
       </section>
 
