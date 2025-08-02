@@ -3,9 +3,11 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="font-sans flex flex-col text-center items-center">
-      <section className="bg-linear-to-b from-indigo-900/36 to-transparent p-8 w-full ease-out duration-320 relative">
-        <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-800/50 to-transparent"></div>
+    <div className="font-sans flex flex-col text-center items-center relative">
+
+      <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-blue-600 to-transparent opacity-64"></div>
+
+      <section className="bg-linear-to-b from-blue-900/25 to-transparent p-8 w-full ease-out duration-320 relative">
 
         <div className="min-h-[calc(100vh_-_var(--navbar-height)_-_2_*_var(--spacing)_*_8)] flex flex-col justify-center items-center">
 
@@ -22,7 +24,9 @@ export default function NotFound() {
           </Link>
 
         </div>
+
       </section>
+
     </div>
   );
 }

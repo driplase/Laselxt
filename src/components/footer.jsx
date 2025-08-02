@@ -24,8 +24,8 @@ export default function Header() {
             <h4 className="text-base my-2">Projects</h4>
 
             <p className="m-3">
-              <Link href="/projects/editvr" className="text-lg text-gray-300 p-2 hover:underline">
-                Editvr
+              <Link href="/projects/editxrva" className="text-lg text-gray-300 p-2 hover:underline">
+                EditxrVA
               </Link>
             </p>
 
