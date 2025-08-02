@@ -26,7 +26,7 @@ export default function DefaultLayout({ children }) {
       >
         <Navbar />
 
-        <main className="min-h-[100dvh_-_var(--navbar-height)]">
+        <main className="min-h-[calc(100vh_-_var(--navbar-height))]">
           {
             /*
               // header shade?

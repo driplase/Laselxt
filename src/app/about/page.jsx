@@ -1,9 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
-import { IconVolume } from '@tabler/icons-react';
-
-export default function Home() {
-
+export default function About() {
   return (
     <div className="font-sans flex flex-col items-start relative">
       <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-blue-600 to-transparent"></div>
@@ -26,10 +21,6 @@ export default function Home() {
         <div className="text-lg text-slate-400 my-2 mb-6">
           Making something what we really love.
         </div>
-
-        <Link className="btn-normal before:content-['Learn_more']" href="/about">
-          Learn more
-        </Link>
       </section>
 
       <section className="bg-linear-to-b from-indigo-900/12 to-transparent border-t border-t-indigo-800/36 w-full p-6 sm:p-12">
@@ -41,5 +32,5 @@ export default function Home() {
         </p>
       </section>
     </div>
-  );
+  )
 }

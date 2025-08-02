@@ -14,6 +14,14 @@
   --font-mono: var(--font-ubuntu-sans-mono);
 }
 
+code {
+  @apply px-1.5 py-1 rounded-md bg-slate-800 border border-indigo-900/50;
+}
+
+@utility btn-normal {
+  @apply relative text-xl bg-linear-128 from-sky-500 to-indigo-500 px-3.5 py-2 rounded-xl before:text-xl before:bg-linear-128 before:from-sky-500 before:to-indigo-500 before:px-3.5 before:py-2 before:rounded-xl before:blur-sm hover:before:blur-md before:opacity-80 hover:before:opacity-100 before:absolute before:inset-0 before:-z-1 before:duration-640 before:ease-out;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
