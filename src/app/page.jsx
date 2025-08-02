@@ -34,7 +34,7 @@ export default function Home() {
 
       <section className="bg-linear-to-b from-blue-900/12 to-transparent border-t border-t-blue-600/36 w-full p-6 sm:p-12">
         <p className="text-lg">
-          Laselxt (pronounced <code>/ˈleɪz.ləkst/</code>) is a non-profit organization that aims to create amazing artworks, and shares to everyone.<br />
+          Laselxt (pronounced <code className="whitespace-nowrap">/ˈleɪz.ləkst/</code>) is a non-profit organization that aims to create amazing artworks, and shares to everyone.<br />
           We wanted to grow and express our creativity, improve skills, and to be known by everyone else. So, we made Laselxt.<br />
           This is the very beginning of Laselxt yet. But, we're already working on a new project! Please look forward to see it.
         </p>
