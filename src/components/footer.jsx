@@ -9,7 +9,9 @@ export default function Header() {
 
         <div className="mr-8 my-6">
           <h1 className="text-4xl font-medium my-3">
-            Laselxt
+            <Link href="/">
+              Laselxt
+            </Link>
           </h1>
           <p className="text-sm my-2 italic opacity-64">
             (FYI: Laselxt is a fiction organization.<br />
@@ -24,13 +26,13 @@ export default function Header() {
             <h4 className="text-base my-2">Projects</h4>
 
             <p className="m-3">
-              <Link href="/projects/editxrva" className="text-lg text-gray-300 p-2 hover:underline">
+              <Link href="/projects/editxrva" className="text-lg text-gray-300 p-2 hover:text-gray-100">
                 EditxrVA
               </Link>
             </p>
 
             <p className="m-3">
-              <Link href="/projects/sdacode" className="text-lg text-gray-300 p-2 hover:underline">
+              <Link href="/projects/sdacode" className="text-lg text-gray-300 p-2 hover:text-gray-100">
                 { /* super dynamically animated code editor */ }
                 SDA Code Editor
               </Link>
@@ -47,7 +49,7 @@ export default function Header() {
             <h4 className="text-base my-2">Laselxt</h4>
 
             <p className="m-3">
-              <Link href="/about" className="text-lg text-gray-300 p-2 hover:underline">
+              <Link href="/about" className="text-lg text-gray-300 p-2 hover:text-gray-100">
                 About us
               </Link>
             </p>
@@ -59,7 +61,13 @@ export default function Header() {
 
       <div className="my-2 text-center">
         <p className="text-sm text-gray-400">
-          
+          Website created by <Link
+            href="https://lase.dev" 
+            target="_blank" 
+            className="underline hover:text-gray-200"
+          >
+            driplase
+          </Link>.
         </p>
       </div>
     </footer>

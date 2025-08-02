@@ -1,4 +1,5 @@
 import PathnameCode from "@/components/not-found/pathnameCode";
+import ScrollVisible from "@/components/scrollVisible";
 import Link from "next/link";
 
 export default function NotFound() {
@@ -9,21 +10,25 @@ export default function NotFound() {
 
       <section className="bg-linear-to-b from-blue-900/25 to-transparent p-8 w-full ease-out duration-320 relative">
 
-        <div className="min-h-[calc(100vh_-_var(--navbar-height)_-_2_*_var(--spacing)_*_8)] flex flex-col justify-center items-center">
+        <ScrollVisible>
 
-          <div className="whitespace-nowrap text-8xl font-bold my-3">
-            404
+          <div className="min-h-[calc(100vh_-_var(--navbar-height)_-_2_*_var(--spacing)_*_8)] flex flex-col justify-center items-center">
+
+            <div className="whitespace-nowrap text-8xl font-bold my-3">
+              404
+            </div>
+
+            <div className="text-lg text-slate-400 my-2 mb-6">
+              Page not found: <PathnameCode />
+            </div>
+
+            <Link className="btn-normal before:content-['Back_to_Home']" href="/">
+              Back to Home
+            </Link>
+
           </div>
 
-          <div className="text-lg text-slate-400 my-2 mb-6">
-            Page not found: <PathnameCode />
-          </div>
-
-          <Link className="btn-normal before:content-['Back_to_Home']" href="/">
-            Back to Home
-          </Link>
-
-        </div>
+        </ScrollVisible>
 
       </section>
 

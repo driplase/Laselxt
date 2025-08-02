@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IconVolume } from '@tabler/icons-react';
 import GridItem from "@/components/gridItem";
+import ScrollVisible from "@/components/scrollVisible";
 
 export default function Home() {
   return (
@@ -42,38 +43,50 @@ export default function Home() {
 
       <section className="bg-linear-to-b from-blue-900/12 to-transparent border-t border-t-blue-600/36 w-full p-6 sm:p-12">
 
-        <h1 className="text-5xl font-bold">What we're working on</h1>
-        <p className="my-2 text-gray-300 text-lg">Something we're making or we made.</p>
+        <h1 className="text-4xl sm:text-5xl font-bold">What we're working on</h1>
+        <p className="my-2 text-gray-300 text-base sm:text-lg">Something we're making or we made.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 justify-center my-3">
 
-          <GridItem
-            className="max-w-105"
-            cover="https://lase.dev/assets/lase_dev_header.webp"
-            coverAlt="lase.dev header image"
-            title="lase.dev Website"
-          >
-            This is the first thing we've worked on.
-          </GridItem>
+          <ScrollVisible>
+            <Link href="https://lase.dev" target="_blank">
+              <GridItem
+                className="max-w-105"
+                cover="https://lase.dev/assets/lase_dev_header.webp"
+                coverAlt="lase.dev header image"
+                title="lase.dev Website"
+              >
+                This is the first thing we've worked on.
+              </GridItem>
+            </Link>
+          </ScrollVisible>
 
-          <GridItem
-            className="max-w-105"
-            cover="https://lase.dev/assets/lase_dev_header.webp"
-            coverAlt=""
-            title="EditxrVA"
-          >
-            An Open-Source Video and Audio Editor.
-          </GridItem>
+          <ScrollVisible>
+            <Link href="/projects/editxrva">
+              <GridItem
+                className="max-w-105"
+                cover="https://lase.dev/assets/lase_dev_header.webp"
+                coverAlt=""
+                title="EditxrVA"
+              >
+                An Open-Source Video and Audio Editor.
+              </GridItem>
+            </Link>
+          </ScrollVisible>
 
-          <GridItem
-            className="max-w-105"
-            cover="https://lase.dev/assets/lase_dev_header.webp"
-            coverAlt=""
-            title="SDA Code Editor"
-          >
-            Super Dynamically Animated Code Editor.<br />
-            Make your coding times more fun.
-          </GridItem>
+          <ScrollVisible>
+            <Link href="/projects/sdacode">
+              <GridItem
+                className="max-w-105"
+                cover="https://lase.dev/assets/lase_dev_header.webp"
+                coverAlt=""
+                title="SDA Code Editor"
+              >
+                Super Dynamically Animated Code Editor.<br />
+                Make your coding times more fun.
+              </GridItem>
+            </Link>
+          </ScrollVisible>
 
         </div>
 
