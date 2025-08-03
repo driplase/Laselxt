@@ -14,8 +14,7 @@ export default function Header() {
             </Link>
           </h1>
           <p className="text-sm my-2 italic opacity-64">
-            (FYI: Laselxt is a fiction organization.<br />
-            {"\xa0".repeat(4)}I just made this website for fun.)
+            (The informations in this website is all fiction.)
             </p>
           <div className="text-gray-300">&copy; 2025 Laselxt</div>
         </div>
@@ -61,13 +60,24 @@ export default function Header() {
 
       <div className="my-2 text-center">
         <p className="text-sm text-gray-400">
-          Website created by <Link
-            href="https://lase.dev" 
-            target="_blank" 
-            className="underline hover:text-gray-200"
-          >
-            driplase
-          </Link>.
+          <span className="px-2 py-1 mx-1.5">
+            Website created by <Link
+              href="https://lase.dev" 
+              target="_blank" 
+              className="underline hover:text-gray-200"
+            >
+              driplase
+            </Link>
+          </span>
+
+          <span className="px-2 py-1 mx-1.5">
+            <Link
+              href="/blog/why-i-made-this-website"
+              className="hover:text-gray-200"
+            >
+              Why I made this website
+            </Link>
+          </span>
         </p>
       </div>
     </footer>
