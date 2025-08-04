@@ -7,7 +7,7 @@ This is a website for Laselxt.
 ### Why did you make this?
 The answer is simple.\
 Two of my friends were using AI to make a modern website, and actually used it in one of their projects.\
-So I casually wanted to oppose them with no reason.
+So I casually wanted to compete with them.
 
 ### why give it the weird name "Laselxt"?
 I tried to make a website with Next.js again. and I needed a brand name (obviously not real though) for this website.\

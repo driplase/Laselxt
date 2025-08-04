@@ -1,6 +1,5 @@
 "use client"
 
-import './scrollVisible.css';
 import { useEffect, useRef } from "react"
 
 export default function ScrollVisible({ children }) {
@@ -9,7 +8,7 @@ export default function ScrollVisible({ children }) {
 
   useEffect(() => {
 
-    const observerCallback = (entries, obsever) => {
+    const observerCallback = (entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('scroll-visible');
@@ -26,6 +25,7 @@ export default function ScrollVisible({ children }) {
     const observer = new IntersectionObserver(observerCallback, options)
 
     observer.observe(targetDOM.current)
+    
   }, [])
 
   return (

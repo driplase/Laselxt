@@ -22,8 +22,75 @@ code {
   @apply relative text-xl bg-linear-128 from-sky-500 to-indigo-500 px-3.5 py-2 rounded-xl before:text-xl before:bg-linear-128 before:from-sky-500 before:to-indigo-500 before:px-3.5 before:py-2 before:rounded-xl before:blur-sm hover:before:blur-md before:opacity-80 hover:before:opacity-100 before:absolute before:inset-0 before:-z-1 before:duration-640 before:ease-out;
 }
 
+.markdown {
+  
+  text-wrap: pretty;
+  line-height: 1.8;
+
+  h1 {
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin-top: 1.5rem auto;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-top: 1.32rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 1.16rem;
+  }
+
+  h4 {
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0.91rem;
+  }
+
+  h6 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-top: 0.83rem;
+  }
+
+  hr {
+    margin: 1rem auto;
+  }
+  
+  p {
+    margin-top: .25rem;
+    margin-bottom: .75rem;
+  }
+
+  a {
+    @apply text-blue-500 underline hover:cursor-pointer hover:text-blue-400;
+  }
+
+}
+
+small {
+  font-size: small;
+  opacity: .64;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.scroll-visible {
+  opacity: 1;
+  --tw-translate-y: 0;
+  --tw-blur: 0;
 }

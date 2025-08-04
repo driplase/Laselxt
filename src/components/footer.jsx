@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Header() {
+export default function Footer() {
   return (
     <footer className="font-sans bg-[rgb(1,_9,_36)] w-full border-t-indigo-900 border-t px-12 py-8 min-h-64 relative">
       <div className="absolute inset-0 bg-linear-to-b from-indigo-950/10 to-transparent pointer-events-none"></div>
