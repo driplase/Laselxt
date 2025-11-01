@@ -19,7 +19,7 @@ export default function Navbar() {
           <div className="relative group ease-out duration-640 hover:scale-110">
             <Image
               className="invert pointer-events-none z-2"
-              src="https://lase.dev/assets/d_128x128.png"
+              src="https://lase.dev/assets/logo/d_128x128.webp"
               decoding="async"
               width={42}
               height={42}
@@ -27,7 +27,7 @@ export default function Navbar() {
             />
             <Image
               className="invert pointer-events-none absolute z-1 inset-0 mix-blend-lighten blur-xs opacity-50 group-hover:blur-[3px] group-hover:opacity-100 ease-out duration-640"
-              src="https://lase.dev/assets/d_128x128.png"
+              src="https://lase.dev/assets/logo/d_128x128.webp"
               decoding="async"
               width={42}
               height={42}
